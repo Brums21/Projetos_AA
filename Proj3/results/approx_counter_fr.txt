@@ -1,0 +1,18 @@
+k:3
+avg_mean_total_hits: 0.83
+avg_total_key_hits: 0.83
+sum_25: 1.0
+sum_50: 1.0
+sum_75: 0.83
+k:5
+avg_mean_total_hits: 0.45
+avg_total_key_hits: 1.0
+sum_25: 1.0
+sum_50: 0.9
+sum_75: 0.45
+k:11
+avg_mean_total_hits: 0.2
+avg_total_key_hits: 0.97
+sum_25: 1.0
+sum_50: 0.97
+sum_75: 0.61

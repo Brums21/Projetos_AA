@@ -1,0 +1,11 @@
+Number of events: 612945
+Mean: 76616.85
+mad: 239.45
+std_dev: 299.18012550970025
+max_dev: 943.8500000000058
+Probability: 0.12499791987861882
+Average Absolute Error: 536328.15
+Minimum Relative Error: 535668
+Minimum Relative Error: 22.654153534451552
+Maximum Relative Error: 537272
+Maximum Relative Error: 22.809716658203875
