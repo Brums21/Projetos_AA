@@ -1,6 +1,8 @@
+.gitignore
 Proj1/venv/
 Proj1/info_nodes
 Proj1/images
+Proj2/__pycache__
 Proj2/sw_grafos
 Proj2/info_nodes
 Proj2/venv/
