@@ -6,7 +6,7 @@ k_value:0
 execution_time:0.0
 --
 k_value:0
-execution_time:0.0010042190551757812
+execution_time:0.0
 --
 k_value:0
 execution_time:0.0
@@ -54,10 +54,10 @@ k_value:1
 execution_time:0.0
 --
 k_value:2
-execution_time:0.0010004043579101562
+execution_time:0.0
 --
 k_value:3
-execution_time:0.0
+execution_time:8.535385131835938e-05
 nnodes:5
 percentage: 0.125
 edges: 1
@@ -111,10 +111,10 @@ k_value:1
 execution_time:0.0
 --
 k_value:2
-execution_time:0.0005054473876953125
+execution_time:0.0
 --
 k_value:4
-execution_time:0.0009992122650146484
+execution_time:0.000972747802734375
 --
 k_value:5
 execution_time:0.0
@@ -159,10 +159,10 @@ k_value:2
 execution_time:0.0
 --
 k_value:4
-execution_time:0.0009989738464355469
+execution_time:0.0
 --
 k_value:5
-execution_time:0.0010004043579101562
+execution_time:0.0
 nnodes:6
 percentage: 0.75
 edges: 11
@@ -171,19 +171,19 @@ k_value:1
 execution_time:0.0
 --
 k_value:3
-execution_time:0.0040130615234375
+execution_time:0.0019998550415039062
 --
 k_value:6
-execution_time:0.01053476333618164
+execution_time:0.007044553756713867
 --
 k_value:8
-execution_time:0.003999948501586914
+execution_time:0.0030045509338378906
 nnodes:7
 percentage: 0.125
 edges: 2
 --
 k_value:0
-execution_time:0.001001119613647461
+execution_time:0.0
 --
 k_value:0
 execution_time:0.0
@@ -201,7 +201,7 @@ k_value:1
 execution_time:0.0
 --
 k_value:1
-execution_time:0.0005037784576416016
+execution_time:0.0
 --
 k_value:2
 execution_time:0.0
@@ -216,28 +216,28 @@ k_value:1
 execution_time:0.0
 --
 k_value:2
-execution_time:0.0010004043579101562
+execution_time:0.0
 --
 k_value:5
-execution_time:0.004999876022338867
+execution_time:0.0029990673065185547
 --
 k_value:8
-execution_time:0.0019996166229248047
+execution_time:0.0010454654693603516
 nnodes:7
 percentage: 0.75
 edges: 15
 --
 k_value:2
-execution_time:0.0009992122650146484
+execution_time:0.0010204315185546875
 --
 k_value:4
-execution_time:0.03931403160095215
+execution_time:0.022388458251953125
 --
 k_value:8
-execution_time:0.2032153606414795
+execution_time:0.12710332870483398
 --
 k_value:11
-execution_time:0.04195594787597656
+execution_time:0.02971339225769043
 nnodes:8
 percentage: 0.125
 edges: 3
@@ -261,40 +261,40 @@ k_value:1
 execution_time:0.0
 --
 k_value:2
-execution_time:0.0010039806365966797
+execution_time:0.0
 --
 k_value:4
 execution_time:0.0
 --
 k_value:5
-execution_time:0.0009925365447998047
+execution_time:0.00017976760864257812
 nnodes:8
 percentage: 0.5
 edges: 14
 --
 k_value:2
-execution_time:0.001001119613647461
+execution_time:0.0
 --
 k_value:4
-execution_time:0.01872396469116211
+execution_time:0.01447916030883789
 --
 k_value:7
-execution_time:0.11124587059020996
+execution_time:0.07474780082702637
 --
 k_value:10
-execution_time:0.03120112419128418
+execution_time:0.023479938507080078
 nnodes:8
 percentage: 0.75
 edges: 21
 --
 k_value:3
-execution_time:0.022020816802978516
+execution_time:0.01618504524230957
 --
 k_value:5
-execution_time:0.6437418460845947
+execution_time:0.518549919128418
 --
 k_value:10
-execution_time:15.509460210800171
+execution_time:11.452034950256348
 --
 k_value:16
-execution_time:1.000688076019287
+execution_time:0.8105735778808594

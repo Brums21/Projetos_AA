@@ -1,4 +1,5 @@
 import itertools
+import os
 import time
 import random
 import print_graficos as pg
@@ -140,6 +141,12 @@ def main():
     NODES_GREEDY = 30
     NODES_RANDOM = 300
 
+    if not os.path.exists("./info_nodes"):
+        os.makedirs("./info_nodes")
+        
+    if not os.path.exists("./images"):
+        os.makedirs("./images")
+        
     wg.initialize_files()
     percentages = [0.125, 0.25, 0.5, 0.75]
     total = 0

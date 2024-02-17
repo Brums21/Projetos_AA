@@ -1,10 +1,20 @@
-# 2o Projeto Algoritmos Avançados
+# Projeto Algoritmos Avançados #2
 
-### Github link:
+Decision Problem - Edge dominating set of a graph with _k_ edges.
 
-https://github.com/Brums21/Projeto_AA
+![Edge dominating set](./images/edge_dominating_set_example.png)
 
-### Como executar (windows):
+The edge dominating set corresponds to the set defined by the red lines.
+
+## Purpose
+
+Implementing a randomized approach to solve the _k_-edge dominating problem, and infer how it, although using non-deterministic methods, can obtain solid solutions to the problem.
+
+### Randomized approach: 
+
+Different sets of edges are generated randomly, and then verified whether it consists on an edge dominating set or not. This represents a solid solution since it consists on a problem where checking if the candidate solution is indeed a solution for the problem or not is simpler to verify than generating an accurate solution.
+
+## How to run tests (Windows):
 
 1. ```python3 -m venv venv```
 
@@ -14,16 +24,19 @@ https://github.com/Brums21/Projeto_AA
 
 4. ```.\ProjetoAA.py```
 
-### Resultados
+### Results
 
-Resultados dos testes na pasta `./info_nodes`
+Test results are presented in the `./info_nodes` directory.
 
-### Gráficos
+### Graphics
 
-Graficos gerados na pasta `./images`
+Generated graphics are presented in the `./images` directory
 
 ### SW grafos
 
-Gráficos importados para os testes pela pasta `./sw_grafos`. Esta pasta não consta no repositório, devido a ficheiro demasiado grandes.
+Imported graphs for test usage should be downloaded, unzipped, and placed directly inside this directory (`./Proj2`), in which the folder containing them should be named `sw_grafos`. This is due to the fact that the files are too big for github to handle.
+
+Link to download folders containing the files: [sw_grafos](https://uapt33090-my.sharepoint.com/:f:/g/personal/brunams21_ua_pt/Er6fmJH4AuRAqHpKxHyeiT0BXidgyZJgWyphZJstJexJcg?e=W40rCi)
+
 
 

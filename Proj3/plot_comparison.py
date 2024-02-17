@@ -82,8 +82,11 @@ def plot_comparison_all():
 
     plt.savefig("./images/comp_effor_all.png")
     plt.close()
+    
+def main():
+    plot_comparison()
+    plot_comparison_all()
 
     
 if "__main__"==__name__:
-    plot_comparison()
-    plot_comparison_all()
+    main()

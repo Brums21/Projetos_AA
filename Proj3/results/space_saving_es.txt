@@ -1,9 +1,9 @@
 k:3
-percentage_correct_keys: 0.0%
-percentage_correct_order: 33.33333333333333%
+percentage_correct_keys: 33.33333333333333%
+percentage_correct_order: 0.0%
 k:5
-percentage_correct_keys: 20.0%
-percentage_correct_order: 60.0%
+percentage_correct_keys: 60.0%
+percentage_correct_order: 20.0%
 k:11
-percentage_correct_keys: 27.27272727272727%
-percentage_correct_order: 72.72727272727273%
+percentage_correct_keys: 72.72727272727273%
+percentage_correct_order: 27.27272727272727%

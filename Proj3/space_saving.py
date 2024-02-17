@@ -34,8 +34,9 @@ def incidency_stats_files_sc(file, counter_sc, exact_counter, k):
     common_keys = len(set(keys_exact) & set(keys_sc))
     
     file.write("k:" + str(k) + "\n")
-    file.write("percentage_correct_keys: " + str((common_keys_order/k)*100) + "%\n")        
-    file.write("percentage_correct_order: " + str((common_keys/k)*100) + "%\n")     
+    file.write("percentage_correct_keys: " + str((common_keys/k)*100) + "%\n")
+    file.write("percentage_correct_order: " + str((common_keys_order/k)*100) + "%\n")        
+         
 
       
 def main():      

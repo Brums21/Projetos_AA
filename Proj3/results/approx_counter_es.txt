@@ -1,18 +1,18 @@
 k:3
-avg_mean_total_hits: 1.0
-avg_total_key_hits: 1.0
-sum_25: 1.0
-sum_50: 1.0
-sum_75: 1.0
+order_correspondences: 100.0%
+keys_correspondence: 100.0%
+sum_25: 100.0%
+sum_50: 100.0%
+sum_75: 100.0%
 k:5
-avg_mean_total_hits: 1.0
-avg_total_key_hits: 1.0
-sum_25: 1.0
-sum_50: 1.0
-sum_75: 1.0
+order_correspondences: 100.0%
+keys_correspondence: 100.0%
+sum_25: 100.0%
+sum_50: 100.0%
+sum_75: 100.0%
 k:11
-avg_mean_total_hits: 0.53
-avg_total_key_hits: 1.0
-sum_25: 1.0
-sum_50: 1.0
-sum_75: 0.98
+order_correspondences: 53.0%
+keys_correspondence: 100.0%
+sum_25: 100.0%
+sum_50: 100.0%
+sum_75: 98.0%

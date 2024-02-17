@@ -1,6 +1,6 @@
 import itertools
+import os
 import networkx as nx
-import networkx.algorithms.approximation as alg
 import matplotlib.pyplot as plt
 import time
 import random
@@ -82,7 +82,7 @@ def draw_edges_and_graph(G, dominating_set):
             G[element[0]][element[1]]['color'] = 'red'
     edge_color_list = [G[e[0]][e[1]]['color'] for e in G.edges()]
     pos = nx.get_node_attributes(G, 'pos')
-    #image_dominating_set(G, edge_color_list, pos)
+    image_dominating_set(G, edge_color_list, pos)
         
 def image_dominating_set(G, edge_color_list, pos):
     plt.title("Edge dominating set of a graph with " +  str(len(G.edges()))+ " edges and " + str(len(G.nodes())) + " nodes")
@@ -198,25 +198,26 @@ def write_graph_solutions_gr(solutions, k_value):
     pass
 
 def initialize_files():
-    f = open("./info_nodes/nsolutions_ex.txt", "w") #delete existing data
+    os.makedirs("./info_nodes")
+    f = open("./info_nodes/nsolutions_ex.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/exec_time_ex.txt", "w") #delete existing data
+    f = open("./info_nodes/exec_time_ex.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/basic_ex.txt", "w") #delete existing data
+    f = open("./info_nodes/basic_ex.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/configurations_ex.txt", "w") #delete existing data
+    f = open("./info_nodes/configurations_ex.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/nsolutions_gr.txt", "w") #delete existing data
+    f = open("./info_nodes/nsolutions_gr.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/exec_time_gr.txt", "w") #delete existing data
+    f = open("./info_nodes/exec_time_gr.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/basic_gr.txt", "w") #delete existing data
+    f = open("./info_nodes/basic_gr.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/configurations_gr.txt", "w") #delete existing data
+    f = open("./info_nodes/configurations_gr.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/solutions_ex.txt", "w") #delete existing data
+    f = open("./info_nodes/solutions_ex.txt", "w+") #delete existing data
     f.close()
-    f = open("./info_nodes/solutions_gr.txt", "w") #delete existing data
+    f = open("./info_nodes/solutions_gr.txt", "w+") #delete existing data
     f.close()
 
 def write_nodes_edges_gr(nodes, percentage, nedges): 
@@ -248,7 +249,11 @@ def write_to_file_ex(nsolutions, solutions_, execution_time, exh_basic, exh_conf
     write_graph_configurations_ex(exh_configurations, kvalue)
 
 def main():
+    
     initialize_files()
+    if not (os.path.exists("./images")):
+        os.mkdir("./images")
+        
     percentages = [0.125, 0.25, 0.5, 0.75]
     total = 0
     correct = 0
@@ -286,6 +291,7 @@ def main():
                     
                     write_to_file_ex(nsolutions, solutions_, execution_time, exh_basic, exh_configurations, kvalue)
 
+                    #draw example edge dominating set for report image
                     if solutions_!=[] and percentage==0.75 and kvalue==8 and nodes==7:
                         draw_edges_and_graph(G, solutions_[0])
 

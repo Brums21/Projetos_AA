@@ -1,3 +1,4 @@
+import os
 import random
 import time as tm
 
@@ -48,6 +49,7 @@ def calculate_statistics_files_all_languages(all_counters, exact_counter, a, tri
         relative_errors.append(relative_error)
 
     avg_absolute_error = sum(absolute_errors) / len(absolute_errors)
+    avg_relative_error = sum(relative_errors) / len(relative_errors)
     min_absolute_error = min(absolute_errors)
     min_relative_error = min(relative_errors)
     max_absolute_error = max(absolute_errors)
@@ -56,7 +58,7 @@ def calculate_statistics_files_all_languages(all_counters, exact_counter, a, tri
     #write to file
     file_write_stats(files_languages[a], n_events, mean_value, mad, std_dev,
                     max_dev, el,
-                    avg_absolute_error, 
+                    avg_absolute_error, avg_relative_error,
                     min_absolute_error, max_absolute_error, 
                     min_relative_error, max_relative_error)    
 
@@ -85,11 +87,11 @@ def incidency_stats_files_aprox(file_diff, all_counters, exact_counter, n_elemen
     sum_75 = compare_lists(all_counters_keys, exact_counter_keys, threshold=0.75)
     
     file_diff.write("k:" + str(n_elements) + "\n")
-    file_diff.write("avg_mean_total_hits: " + str(avg_mean_total_hits*100) + "%\n")     
-    file_diff.write("avg_total_key_hits: " + str(avg_total_key_hits*100) + "%\n") 
-    file_diff.write("sum_25: " + str(sum_25/len(all_counters_keys)) + "%\n") 
-    file_diff.write("sum_50: " + str(sum_50/len(all_counters_keys)) + "%\n") 
-    file_diff.write("sum_75: " + str(sum_75/len(all_counters_keys)) + "%\n") 
+    file_diff.write("order_correspondences: " + str(avg_mean_total_hits*100) + "%\n")     
+    file_diff.write("keys_correspondence: " + str(avg_total_key_hits*100) + "%\n") 
+    file_diff.write("sum_25: " + str(sum_25*100/len(all_counters_keys)) + "%\n") 
+    file_diff.write("sum_50: " + str(sum_50*100/len(all_counters_keys)) + "%\n") 
+    file_diff.write("sum_75: " + str(sum_75*100/len(all_counters_keys)) + "%\n") 
     
 def main():
     text_en, text_es, text_fr = get_and_filter_documents()
