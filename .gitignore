@@ -1,4 +1,3 @@
-.gitignore
 Proj1/venv/
 Proj1/info_nodes
 Proj1/images
@@ -9,3 +8,4 @@ Proj2/venv/
 Proj3/venv/
 Proj3/__pycache__
 Proj3/results
+./.gitignore
